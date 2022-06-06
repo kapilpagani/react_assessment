@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Form from "@rjsf/material-ui";
+import Form from "@rjsf/core";
 import { useEffect } from "react";
 
 export default function CrediCardForm(props) {
@@ -20,7 +20,8 @@ export default function CrediCardForm(props) {
       securityCodeCVV: cardData?.securityCodeCVV,
       cardId: cardData?.cardId,
     }));
-  }, [props?.cardData]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.cardData]);
   const schema = {
     title: "Credit Card",
     type: "object",
