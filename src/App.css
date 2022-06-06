@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 400px;
+  height: 80px;
+  padding: 15px;
+  margin: auto;
+  border: 2px solid red;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+.dashboard-container {
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+}
+.heading {
+  margin: auto;
+  text-align: center;
+  padding: 0px 0px 25px 0px;
+}
+
+.adButton {
+  background-color: #ff8c00; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 700px;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  background-color: #ff8c00; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.editButton {
+  background-color: #ff8c00; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+}
