@@ -50,6 +50,11 @@ export default function CrediCardForm(props) {
   return (
     <div className="form-container">
       {" "}
+      <div>
+        <button onClick={() => props.handleBack()} className="deleteButton">
+          Back
+        </button>
+      </div>
       <Form
         schema={schema}
         formData={formData}

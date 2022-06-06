@@ -58,6 +58,11 @@ export default function Dashboard() {
     setCardEditData(newData);
     setEditCard(true);
   };
+
+  const handleBack = () => {
+    setEditCard(false);
+    setAddButton(false);
+  };
   return (
     <div>
       {" "}
@@ -79,12 +84,15 @@ export default function Dashboard() {
           </div>
         </>
       )}
-      {addButton && <CrediCardForm handleSubmit={handleSubmit} />}
+      {addButton && (
+        <CrediCardForm handleSubmit={handleSubmit} handleBack={handleBack} />
+      )}
       {editCard && (
         <CrediCardForm
           handleSubmit={handleSubmit}
           editCard
           cardData={cardEditData}
+          handleBack={handleBack}
         />
       )}
     </div>
