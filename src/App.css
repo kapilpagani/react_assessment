@@ -83,6 +83,12 @@
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .adButton {
+    margin-left: 50%;
+  }
+}
+
 .deleteButton {
   background-color: #ff8c00; /* Green */
   border: none;
