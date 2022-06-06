@@ -87,7 +87,7 @@ export default function Dashboard() {
       {addButton && (
         <CrediCardForm handleSubmit={handleSubmit} handleBack={handleBack} />
       )}
-      {editCard && (
+      {editCard && !addButton && (
         <CrediCardForm
           handleSubmit={handleSubmit}
           editCard

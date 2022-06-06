@@ -13,14 +13,15 @@ export default function CrediCardForm(props) {
 
   useEffect(() => {
     const { cardData } = props;
-    setCardData((prevState) => ({
-      ...prevState,
-      cardNumber: cardData?.cardNumber,
-      cardHolderName: cardData?.cardHolderName,
-      validThrou: cardData?.validThrou,
-      securityCodeCVV: cardData?.securityCodeCVV,
-      cardId: cardData?.cardId,
-    }));
+    // setCardData((prevState) => ({
+    //   ...prevState,
+    //   cardNumber: cardData?.cardNumber,
+    //   cardHolderName: cardData?.cardHolderName,
+    //   validThrou: cardData?.validThrou,
+    //   securityCodeCVV: cardData?.securityCodeCVV,
+    //   cardId: cardData?.cardId,
+    // }));
+    setCardData(cardData);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.cardData]);
   const schema = {
